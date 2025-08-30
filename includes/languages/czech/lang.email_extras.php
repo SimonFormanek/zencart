@@ -1,0 +1,33 @@
+<?php
+$define = [
+    'EMAIL_LOGO_ALT_TITLE_TEXT' => 'Zen Cart! Umění e-commerce',
+    'EMAIL_LOGO_FILENAME' => 'header.jpg',
+    'EMAIL_LOGO_WIDTH' => '550',
+    'EMAIL_LOGO_HEIGHT' => '110',
+    'EMAIL_EXTRA_HEADER_INFO' => '',
+    'OFFICE_FROM' => '<strong>Od:</strong>',
+    'OFFICE_EMAIL' => '<strong>E-mail:</strong>',
+    'OFFICE_USE' => '<strong>Pouze pro interní použití:</strong>',
+    'OFFICE_LOGIN_NAME' => '<strong>Přihlašovací jméno:</strong>',
+    'OFFICE_LOGIN_EMAIL' => '<strong>Přihlašovací e-mail:</strong>',
+    'OFFICE_LOGIN_PHONE' => '<strong>Telefon:</strong>',
+    'OFFICE_LOGIN_FAX' => '<strong>Fax:</strong>',
+    'OFFICE_IP_ADDRESS' => '<strong>IP adresa:</strong>',
+    'OFFICE_HOST_ADDRESS' => '<strong>Hostitelská adresa:</strong>',
+    'OFFICE_DATE_TIME' => '<strong>Datum a čas:</strong>',
+    'EMAIL_TEXT_TELEPHONE' => 'Telefon: ',
+    'EMAIL_DISCLAIMER' => 'Tuto e-mailovou adresu jste nám poskytli vy nebo jeden z našich zákazníků. Pokud jste se neregistrovali, nebo se domníváte, že jste tento e-mail obdrželi omylem, napište prosím na %s ',
+    'EMAIL_SPAM_DISCLAIMER' => '',
+    'EMAIL_ORDER_MESSAGE' => '',
+    'EMAIL_FOOTER_COPYRIGHT' => 'Copyright (c) ' . date('Y') . ' <a href="' . zen_href_link(FILENAME_DEFAULT) . '">' . STORE_NAME . '</a>. Poháněno <a href="https://www.zen-cart.com">Zen Cart</a>',
+    'TEXT_UNSUBSCRIBE' => "\n\nPro odhlášení z budoucích newsletterů a propagačních e-mailů jednoduše klikněte na následující odkaz: \n",
+    'EMAIL_ADVISORY' => '-----' . "\n" . '<strong>DŮLEŽITÉ:</strong> Pro vaši ochranu a prevenci zneužití jsou všechny e-maily odeslané z této stránky zaznamenávány a jejich obsah je dostupný majiteli obchodu. Pokud jste tento e-mail obdrželi omylem, napište prosím na ' . STORE_OWNER_EMAIL_ADDRESS . "\n\n",
+    'EMAIL_ADVISORY_INCLUDED_WARNING' => '<strong>Tato zpráva je přiložena ke všem e-mailům odeslaným z této stránky:</strong>',
+    'SEND_EXTRA_CREATE_ACCOUNT_EMAILS_TO_SUBJECT' => '[VYTVOŘIT ÚČET]',
+    'SEND_EXTRA_GV_CUSTOMER_EMAILS_TO_SUBJECT' => '[ODESLÁN GV ZÁKAZNÍKOVI]',
+    'SEND_EXTRA_NEW_ORDERS_EMAILS_TO_SUBJECT' => '[NOVÁ OBJEDNÁVKA]',
+    'EMAIL_TEXT_SUBJECT_LOWSTOCK' => 'Upozornění: Nízký stav zásob',
+    'SEND_EXTRA_LOW_STOCK_EMAIL_TITLE' => 'Zpráva o nízkém stavu zásob: ',
+];
+
+return $define;
