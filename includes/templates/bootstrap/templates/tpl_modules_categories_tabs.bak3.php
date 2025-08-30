@@ -29,14 +29,14 @@ $top = '<table class="mt"><tr>';
 	while (!$categories_tab->EOF) 
 	{
 	// TODO: currently selected category = javascript viz /bootstrap/teplates/fragment.php
-$cat_id = (int)$categories_tab->fields['categories_id'];
-$cat_name = htmlspecialchars($categories_tab->fields['categories_name']);
+	$top .=	'<td>';
+	$top .=	 '<a href="' . basename($_SERVER['REQUEST_URI']) . '#m' . (int)$categories_tab->fields['categories_id'] .'">'; 
+		if((int)$fragment == $categories_tab->fields['categories_id']) 
+		 	$top .=	 '<b>bold:'.$categories_tab->fields['categories_name'].'</b>';
+		else 
+		 	$top .=	 $categories_tab->fields['categories_name'];
 
-$top .= '<td>';
-$top .= '<a href="' . basename($_SERVER['REQUEST_URI']) . '#m' . $cat_id . '" class="category-tab" data-id="' . $cat_id . '">';
-$top .= $cat_name;
-$top .= '</a></td>';
-
+			$top .=	 '</a></td>';
 		$subcategories_tab_query="SELECT c.categories_id, cd.categories_name FROM ".TABLE_CATEGORIES." c, ".TABLE_CATEGORIES_DESCRIPTION . " cd WHERE c.categories_id=cd.categories_id AND c.parent_id= '".(int)$categories_tab->fields['categories_id']."' AND cd.language_id='" . (int)$_SESSION['languages_id'] . "' AND c.categories_status='1' ORDER BY c.sort_order, cd.categories_name;";
 		$subcategories_tab=$db->Execute($subcategories_tab_query);
 		if($subcategories_tab->RecordCount()>0)

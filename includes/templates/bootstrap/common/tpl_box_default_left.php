@@ -22,6 +22,7 @@ if (!empty($title_link)) {
 }
 ?>
 <div id="<?php echo str_replace('_', '-', $box_id ) . '-leftBoxCard'; ?>" class="leftBoxCard card mb-3">
-    <h4 id="<?php echo str_replace('_', '-', $box_id) . '-leftBoxHeading'; ?>" class="leftBoxHeading card-header"><?php echo $title; ?></h4>
+
+    <h4 style="display:block" id="<?php echo str_replace('_', '-', $box_id) . '-leftBoxHeading'; ?>" class="leftBoxHeading card-header"><?php echo $title; ?>&nbsp;<a class="imgmodal-close d-lg-none" style="float:right" href="#"><i class="fa-solid fa-circle-xmark"></i></a></h4>
     <?php echo $content; ?>
 </div>
