@@ -59,7 +59,8 @@ $top .= '</a></td>';
 			$hidden .= '<div class="h m" id="m' . (int)$categories_tab->fields['categories_id'] . '">';
 			while (!$products_tab->EOF) 
 			{	
-				$cPath_new=zen_get_path($categories->fields['categories_id']);
+				$cPath_new=zen_get_path($categories_tab->fields['categories_id']);
+//				$cPath_new=zen_get_path($categories->fields['categories_id']);
 				$cPath_new=str_replace('=0_', '=', $cPath_new);
 				$hidden .= '<a href="'.zen_href_link(zen_get_info_page($products_tab->fields['products_id']),$cPath_new. '&products_id=' . $products_tab->fields['products_id']) . '">'.$products_tab->fields['products_name'].'</a> ';
 				$products_tab->MoveNext();
