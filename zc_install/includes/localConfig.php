@@ -24,7 +24,7 @@ define('DB_MYSQL_MODE', 'TRADITIONAL');
 //$dev_db_default_name = 'zencart';
 $dev_db_default_name = basename(DIR_FS_ROOT);
 //$dev_db_default_name = 'zencart-' . PROJECT_VERSION_MAJOR . '.' . PROJECT_VERSION_MINOR;
-$dev_db_default_name = 'zencart' . PROJECT_VERSION_MAJOR . preg_replace('/\D/', '', PROJECT_VERSION_MINOR);
+//$dev_db_default_name = 'zencart' . PROJECT_VERSION_MAJOR . preg_replace('/\D/', '', PROJECT_VERSION_MINOR);
 
 
 // optional additional developer-mode defaults:  (which only take effect if DEVELOPER_MODE===true)
