@@ -17,7 +17,7 @@ define('DB_MYSQL_MODE', 'TRADITIONAL');
 // optionally turn on developer mode
 // enabled automatically if environment var is set: HABITAT=zencart
 // or uncomment below:
-// define('DEVELOPER_MODE', true);
+define('DEVELOPER_MODE', true);
 
 
 // Following are various default db-name formats you might try in your local development strategy. Feel free to uncomment the one you prefer
